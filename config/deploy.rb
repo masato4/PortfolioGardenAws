@@ -2,7 +2,7 @@
 lock "~> 3.17.0"
 
 set :application, "PortfolioGardenAws"
-set :repo_url, "git@github.com:masato4/PortfolioGarden.git"
+set :repo_url, "git@github.com:masato4/PortfolioGardenAws.git"
 set :rbenv_ruby, File.read('.ruby-version').strip
 set :branch, ENV['BRANCH'] || "master"
 
