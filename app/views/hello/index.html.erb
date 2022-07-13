@@ -1,2 +1,9 @@
 Hello World!
 <%= link_to '一覧表示', posts_path %>
+
+<% if user_signed_in? %>
+  <p><%= button_to 'ログアウト', destroy_user_session_path, method: :delete %></p>
+<% else %>
+  <p><%= link_to "新規登録", new_user_registration_path %></p>
+  <p><%= link_to "ログイン", new_user_session_path %></p>
+<% end %>
