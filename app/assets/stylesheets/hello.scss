@@ -1,3 +1,331 @@
 // Place all the styles related to the hello controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.japanese-title {
+  /* display: inline-block; */
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 50px;
+}
+
+.hello-img {
+  object-fit: cover;
+}
+
+.hello-text {
+  font-size: 18px;
+}
+
+
+.worry-part {
+  display: flex;
+}
+
+.worry-text {
+  margin-top: 150px;
+  font-size: 18px;
+}
+
+/* .title-section {
+  margin-left: 50px;
+} */
+
+.title-part {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.title-image {
+  margin-left: 0px;
+}
+
+/* .title-text-all {
+  margin-top: 100px;
+} */
+
+.title-text {
+  margin-top: 150px;
+  font-family: "didot";
+  font-size: 50px;
+}
+
+.plant-part {
+  display: flex;
+}
+
+.plant-text {
+  margin-top: 120px;
+  font-size: 18px;
+}
+
+
+
+
+
+/* transition----------------------------------- */
+.container-hello {
+  position: relative;
+  height: 800px;
+}
+
+.container-hello section {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  animation: change-img-anim 30s infinite;
+}
+
+.container-hello section:nth-of-type(1) {
+  animation: change-img-anim-first 30s infinite;
+  animation-delay: 0s;
+}
+
+.container-hello section:nth-of-type(2) {
+  animation-delay: 10s;
+}
+
+.container-hello section:nth-of-type(3) {
+  animation: change-img-anim-first 30s infinite;
+  animation-delay: 20s;
+}
+
+@keyframes change-img-anim-first {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  36% {
+    opacity: 1;
+  }
+
+  45% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes change-img-anim {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  36% {
+    opacity: 1;
+  }
+
+  45% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes change-img-anim-end {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  36% {
+    opacity: 1;
+  }
+
+  37% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.introduce {
+  background-color: rgb(251, 251, 251);
+  height: 800px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: inset 0 0 15px 15px rgb(255, 255, 255);
+}
+
+.introduce-titile {
+  text-align: center;
+
+}
+
+#available-title {
+  padding-top: 100px;
+}
+
+.abailable-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.abailable-content {
+  height: 350px;
+  width: 350px;
+  // border: solid 0.5px rgb(161, 161, 161);
+  box-shadow: 0 0 5px 5px rgb(255, 255, 255);
+  background-color: white;
+  padding: 0.5em 1em;
+  border-radius: 40%;
+}
+
+.Movie-area {
+  height: 500px;
+  text-align: center;
+}
+
+.hello-subscription {
+  text-align: center;
+  height: 700px;
+  background-color: rgb(251, 251, 251);
+  box-shadow: inset 0 0 15px 15px rgb(255, 255, 255);
+
+}
+
+
+// subscription
+
+.position-subscription {
+  padding-top: 50px;
+}
+
+.potisiton-balloon {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 300px;
+  padding-top: 150px;
+}
+
+.sappi-position {
+  text-align: right;
+}
+
+.balloon4 {
+  position: relative;
+  margin: 2em 0 2em 40px;
+  padding: 30px 15px;
+  background: rgb(168, 202, 179);
+  border-radius: 30px;
+  width: 30%;
+}
+
+.balloon4:before {
+  content: "";
+  position: absolute;
+  right: -38px;
+  width: 13px;
+  height: 12px;
+  bottom: 0;
+  background: rgb(168, 202, 179);
+  border-radius: 50%;
+}
+
+.balloon4:after {
+  content: "";
+  position: absolute;
+  right: -24px;
+  width: 20px;
+  height: 18px;
+  bottom: 3px;
+  background: rgb(168, 202, 179);
+  border-radius: 50%;
+}
+
+.balloon4 p {
+  margin: 0;
+  padding: 0;
+}
+
+.sappisukitouru {
+  background: transparent;
+  opacity: 1;
+}
+
+.subscription-bottom {
+  position: relative;
+  top: 250px;
+}
+
+
+.subscription-bottom.btn,
+a.btn,
+button.subscription-bottom.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-malformation {
+  font-size: 2rem;
+
+  padding: 3rem 4rem;
+
+  color: #fff;
+  border-radius: 100% 80px / 80px 100%;
+  background-color: #c3bab5;
+}
+
+a.btn-malformation:hover {
+  color: #fff;
+  border-radius: 60% 80% / 100% 80%;
+}
+
+a.btn-malformation {
+  font-size: 2rem;
+
+  padding: 3rem 4rem;
+
+  color: #fff;
+  border-radius: 100% 80px / 80px 100%;
+}
+
+a.btn-malformation:hover {
+  color: #fff;
+  border-radius: 60% 80% / 100% 80%;
+}
+
+.btn-malformation--pastel {
+  background: rgb(168, 202, 179);
+  background: -webkit-linear-gradient(-45deg, rgb(168, 202, 179) 40%, #fcfc5d 100%);
+  background: -webkit-linear-gradient(315deg, rgb(168, 202, 179) 40%, #fcfc5d 100%);
+  background: linear-gradient(135deg, rgb(168, 202, 179) 40%, #fcfc5d 100%);
+  -webkit-box-shadow: 30px 10px 0 #fefeb3;
+  box-shadow: 30px 10px 0 #fefeb3;
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fca1a1', endColorstr='#fcfc5d', GradientType=1);
+}

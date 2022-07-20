@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'hello/index' => 'hello#index'
   root to:'hello#index'
   devise_for :users
+  resources :users, only: [:show]
   get 'posts' => 'posts#index'
   get 'posts/new' => 'posts#new'
   post "/" => "sessions#index"

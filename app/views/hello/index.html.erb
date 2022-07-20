@@ -1,9 +1,114 @@
-Hello World!
-<%= link_to '一覧表示', posts_path %>
+<html>
+  <main>
+    <div class="container-hello">
+      <section class="title-section">
+        <div class="title-part">
+          <div class="title-text-all">
+            <p class="title-text">PORTFOLIO GARDEN<p>
+            <p class="hello-text">駆け出しエンジニアが<br>
+            作品を通してつながる場所。</p>
+          </div>
+          <div class="title-image">
+            <%= image_tag "bench.jpeg", alt: "post-image", id: :img_prev, size: "700x700",class:"hello-img"%>
+          </div>
+        </div>
+      </section>
+      <section class="worry-section">
+      <div class="worry-part">
+        <div>
+          <%= image_tag "worry.jpeg", alt: "post-image", id: :img_prev, size: "750x750",class:"hello-img"%>
+        </div>
+        <div class="worry-text">
+          <span class="japanese-title">1人で悩まないで</span>
+          <p class="hello-text">プログラミング学習はエラーで挫折してしまう<br>
+          そんな人のために PORTFOLIO GARDEN は作られました。<br>
+          サイトを通して出会った仲間と一緒にエンジニアへの<br>
+          一歩を踏み出しましょう。</p>
+        </div>
+      </section>
+      <section>
+        <div class="plant-part">
+          <div class="plant-text">
+            <span class="japanese-title">みんなで育てる</span>
+            <p class="hello-text">
+            あなたは同世代や先輩たちの投稿を投稿を観ることが出来ます。<br>
+            あなたの投稿が同世代や後輩に勇気を与えます。<br>
+            一緒にエンジニアが駆け出すためのプラットフォームを<br>
+            作りませんか。
+            </p>
+          </div>
+          <div>
+            <%= image_tag "plant.png", alt: "post-image", id: :img_prev, size: "800x800",class:"hello-img"%>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="introduce">
+      <div class="next-main">
+        <h1 class="introduce-titile mb-5" id="available-title">このサイトで出来ること</h1>
+        <div class="abailable-flex">
+          <section class="abailable-content">
+          <h2>見る</h2>
+          世代を重視したサイト設計で、同世代の作品を見ることに適しています。
+          <%= image_tag "book.png", alt: "post-image", id: :img_prev, size: "250x250",class:"hello-img"%>
+          </section>
+          <section class="abailable-content">
+          <h2>公開する</h2>
+          簡単なステップで自分の作品を公開することができます。
+          <%= image_tag "note_pc.png", alt: "post-image", id: :img_prev, size: "250x250",class:"hello-img"%>
+          </section>
+          <section class="abailable-content">
+          <h2>繋がる</h2>
+          フォーロー・チャット機能が充実しているため、仲間を探すことができます。
+          <%= image_tag "follow.png", alt: "post-image", id: :img_prev, size: "250x250",class:"hello-img"%>
+          </section>
+        </div>
+      </div>
 
-<% if user_signed_in? %>
-  <p><%= button_to 'ログアウト', destroy_user_session_path, method: :delete %></p>
-<% else %>
-  <p><%= link_to "新規登録", new_user_registration_path %></p>
-  <p><%= link_to "ログイン", new_user_session_path %></p>
-<% end %>
+    </div>
+    <div class="Movie-area">
+      <div class="next-main">
+        <h1 class="mb-5">Movie</h1>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/KGWJS48ua00?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="aaaaaa"></iframe>
+      </div>
+    </div>
+
+    <div class="hello-subscription">
+        <% if user_signed_in? %>
+          <div class="next-main">
+            <div class="position-subscription">
+              <div class="potisiton-balloon">
+                <div class="subscription-bottom">
+                  <%= link_to "Works", posts_path,class:"btn btn-malformation btn-malformation--pastel" %>
+                </div>
+                <div class="balloon4">
+                  <p>仲間を見つけよう！</p>
+                </div>
+              </div>
+              <div class="sappi-position">
+                  <%= image_tag "goodjob.png", alt: "post-image", id: :img_prev, size: "250x300",class:"hello-img sappisukitouru" %>
+              </div>
+            </div>
+          </div>
+        <% else %>
+          <div class="next-main">
+            <div class="position-subscription">
+              <div class="potisiton-balloon">
+                <div class="subscription-bottom">
+                  <span class="onegai"><%= link_to "Sign up", new_user_registration_path,class:"btn btn-malformation btn-malformation--pastel" %></span>
+                </div>
+                <div class="balloon4">
+                  <p>登録するしかないよね！</p>
+                </div>
+              </div>
+              <div class="sappi-position">
+                  <%= image_tag "subscription.png", alt: "post-image", id: :img_prev, size: "250x300",class:"hello-img sappisukitouru"%>
+              </div>
+            </div>
+          </div>
+        <% end %>
+    </div>
+
+
+  </main>
+</html>
