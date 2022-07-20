@@ -63,10 +63,11 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
-  host = 'info-portfoliogarden.com'
+  #host = 'info-portfoliogarden.com'
+  host = 'localhost'
   Rails.application.routes.default_url_options[:host] = host
-
-  config.action_mailer.default_url_options = { host: 'info-portfoliogarden.com', port: 3000 }
+  #config.action_mailer.default_url_options = { host: 'info-portfoliogarden.com', port: 3000 }
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   config.action_mailer.delivery_method = :ses
 
 
