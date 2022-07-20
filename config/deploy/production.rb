@@ -1,4 +1,4 @@
-server "35.72.50.83", user: "guuchi4", roles: %w{app db web}
+server "35.79.162.18", user: "guuchi4", roles: %w{app db web}
 
 set :ssh_options, {
   keys: %w(~/.ssh/PortfolioGardenAws.pem),
