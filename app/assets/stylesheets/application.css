@@ -248,12 +248,18 @@ header {
   background-color: rgba(237, 237, 237, 0.226);
   height: 60px;
   /* font-weight: bold; */
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
+  /* justify-content: space-between; */
+  /* display: flex; */
+  /* align-items: center; */
   position: fixed;
+  top: 0;
   z-index: 1;
   /* width: 100%; */
+}
+.header-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header a {
@@ -263,7 +269,6 @@ header a {
   font-weight: lighter;
   padding-top: 10px;
   font-size: 1.25rem;
-
 }
 
 header h1 {
@@ -272,6 +277,7 @@ header h1 {
   font-family: "didot";
   font-weight: lighter;
   font-size: 30px;
+  padding-bottom: 15px;
 }
 
 .after_login:hover {
@@ -283,10 +289,10 @@ header h1 {
   text-transform: uppercase;
   /* margin-top: 5px; */
   list-style: none;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   align-items: center;
   margin-right: 50px;
-  padding-top: 15px;
+  /* padding-top: 15px; */
 
 }
 

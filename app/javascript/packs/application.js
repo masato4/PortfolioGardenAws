@@ -10,3 +10,5 @@ Rails.start()
 Turbolinks.start()
 
 require('jquery')
+import 'bootstrap';
+import '../stylesheets/application';
