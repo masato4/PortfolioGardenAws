@@ -244,22 +244,28 @@ hr {
 
 
 header {
-  width: 100%;
+  /* width: 100%;
   background-color: rgba(237, 237, 237, 0.226);
-  height: 60px;
+  height: 60px; */
   /* font-weight: bold; */
   /* justify-content: space-between; */
   /* display: flex; */
   /* align-items: center; */
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  z-index: 1;
-  /* width: 100%; */
+  z-index: 1; */
+
 }
 .header-flex{
+  background-color: rgba(237, 237, 237, 0.226);
+  height: 60px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
 header a {
